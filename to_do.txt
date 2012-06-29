@@ -1,0 +1,4 @@
+- Fix "About" section - due to padding and negative left margin, there is a horizontal scroll!  Set overflow to auto?
+- Why are there gaps on the top, left, and bottom of the document?  Does this have to do with the viewports...?  Currently "fixed" by negative margins
+- Is there an accepted way to credit people if you've used their code?  http://www.distractedbysquirrels.com/blog/one-page-layout-with-fixed-navigation-and-jquery/
+- Add Google Analytics

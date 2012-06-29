@@ -76,7 +76,7 @@ body {
 	z-index: 2;
 }
 
-/* ABOUT SECTION */
+/************************************** ABOUT SECTION **************************************/
 
 .about_section {
 	background: url(../img/broken_noise.jpg);
@@ -86,7 +86,21 @@ body {
 	z-index: 0;
 }
 
+/************************************** WORK SECTION **************************************/
 .work_section {
 	padding: 40px;
 	margin-top: 70px;
+}
+
+/************************************** PLAY SECTION **************************************/
+.play_section {
+	padding: 40px;
+}
+/************************************** CONTACT SECTION **************************************/
+.contact_section {
+	background: url(../img/broken_noise.jpg);
+	margin: 0px 0px -10px -10px;
+	padding: 40px;
+	width: 100%;
+	z-index: 0;
 }
