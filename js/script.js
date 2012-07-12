@@ -11,6 +11,10 @@ $(document).ready(function() {
 		event.preventDefault();
 		scrollToID('#about', 600);
 	});	
+	$('#lets_talk').click(function(event) {
+		event.preventDefault();
+		scrollToID('#contact', 600);
+	});
 	$('#work_nav').click(function(event) {
 		event.preventDefault();
 		scrollToID('#work', 600);
@@ -23,5 +27,28 @@ $(document).ready(function() {
 		event.preventDefault();
 		scrollToID('#contact', 600);
 	});
+/************************************** SLIDESHOW CYCLE **************************************/	
+
+	
+	$('.slideshow').each(function(i) {
+		var p = this.parentNode;
+			$(this).after('<div class="clearfix pager_right slide_nav slide_nav'+i+'">').cycle({
+		    fx:     'fade', 
+		    speed:  'fast', 
+		    timeout: 0, 
+		    pager:  '.slide_nav' + i
+		});
+	});
+	
+	$('.slideshow_vertical').each(function(i) {
+		var p = this.parentNode;
+			$(this).after('<div class="clearfix pager_right slide_nav slide_nav'+i+'">').cycle({
+		    fx:     'fade', 
+		    speed:  'fast', 
+		    timeout: 0, 
+		    pager:  '.slide_nav' + i
+		});
+	});
+	
 
  });

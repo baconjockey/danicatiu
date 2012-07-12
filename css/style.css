@@ -1,9 +1,115 @@
+.clearfix:after {
+  display: inline;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+
+.clearfix {
+  zoom: 1;
+}
+
 body {
 	background: url(../img/beige_texturetastic.jpg) repeat;
-	margin-top: 70px;
+	margin: 70px 0px 0px 0px;
+	padding: 0px;
 	width: 100%;
 	z-index: 0;
 }
+
+h1 {
+	color: #009a9a;
+	display: inline;
+	font-family: Dancing Script, Georgia, Serif;
+	font-size: 44pt;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h1.nav {
+	bottom: -40px;
+	color: #009a9a;
+	display: inline;
+	font-family: Dancing Script, Georgia, Serif;
+	font-size: 44pt;
+	position: absolute;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h2.beige {
+	color: #f2e9e1;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 18pt;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h2.brown {
+	color: #1c140d;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 18pt;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+h3.work {
+	color: #009a9a;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 24pt;
+	font-style: oblique;
+	margin: 0px;
+	padding: 0px;
+	text-shadow: 1px 0px 0px #d0d0d0;
+}
+
+h4.work {
+	color: #009a9a;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 14pt;
+	font-style: oblique;
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+}
+
+hr.beige {
+	color: #f2e9e1;
+	background-color: #f2e9e1;
+	border: 0;
+	height: 1px;
+	margin: -5px auto;
+}
+
+hr.grey {
+	color: #c0c0c0;
+	background-color: #c0c0c0;
+	border: 0;
+	height: 1px;
+	margin: -5px auto;
+}
+
+p.about {
+	color: #ffffff;
+	display: inline;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 30pt;
+	line-height: 2.5em;
+	margin: 0px;
+	padding: 0px;
+	text-indent: 0;
+	text-shadow: 1px 1px 1px #000;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+p.work {
+	color: #000;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 11pt;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+
+/************************************** NAV BAR **************************************/
 
 .nav_bar {
 	background-color: #fff;
@@ -12,7 +118,7 @@ body {
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 30;
 	
 	-webkit-box-shadow: 0px 0px 2px 0px #c0c0c0;
 	-moz-box-shadow: 0px 0px 2px 0px #c0c0c0;
@@ -41,17 +147,6 @@ body {
 	color: #009a9a;
 }
 
-.nav_bar_content h1 {
-	bottom: 0;
-	color: #009a9a;
-	display: inline;
-	font-family: Dancing Script, Georgia, Serif;
-	font-size: 44pt;
-	margin: 0px;
-	position: absolute;
-	text-shadow: 1px 1px 1px #000;
-}
-
 .nav_bar_content li {
 	display: inline;
 	padding: 0px 0px 0px 30px;
@@ -76,31 +171,256 @@ body {
 	z-index: 2;
 }
 
+/************************************** SOCIAL MEDIA **************************************/
+
+ul.social_media {
+	float: right;
+	display: inline;
+	list-style: none;
+	position: absolute;
+}
+
+ul.social_media li {
+	display: inline;
+	padding: 0px 0px 0px 60px;
+}
+
+ul.social_media li#twitter {
+	background: url(../img/twitter.png) no-repeat;
+	height: 28px;
+	float: left;
+	width: 42px;
+}
+
+ul.social_media li#github {
+	background: url(../img/github.png) no-repeat;
+	height: 28px;
+	float: left;
+	width: 36px;
+}
+
+ul.social_media li#linkedin {
+	background: url(../img/linkedin.png) no-repeat;
+	height: 28px;
+	float: left;
+	width: 30px;
+}
+
 /************************************** ABOUT SECTION **************************************/
+.about_section_container {
+	width: 100%;
+}
 
 .about_section {
 	background: url(../img/broken_noise.jpg);
-	margin: 0px 0px 0px -10px;
-	padding: 40px;
-	width: 100%;
+	padding: 20px 0px 20px 40px;
+	position: relative;
 	z-index: 0;
+	
+	-webkit-box-shadow: 0px 0px 1px 0px #fff;
+	-moz-box-shadow: 0px 0px 1px 0px #fff;
+	box-shadow: 0px 0px 1px 0px #fff;
+}
+
+.about_section a#lets_talk:link, a#lets_talk:visited {
+	border-bottom: 8px dotted;
+	color: #ffffff;
+	text-decoration: none; 
+}
+
+.about_section a#lets_talk:hover, a#lets_talk:active {
+	color: #009a9a;
+}
+
+.about_social_media_container {
+	float: right;
+	position: relative;
+	top: 20px;
+	width: 328px;
 }
 
 /************************************** WORK SECTION **************************************/
 .work_section {
 	padding: 40px;
-	margin-top: 70px;
+}
+
+.work_container {
+	background: rgb(256, 256, 256);
+	background: rgba(256, 256, 256, 0.5);
+	margin-top: 30px;
+	padding: 20px 30px;
+	position: relative;
+	
+	-webkit-box-shadow: 0px 0px 1px 1px #d0ccc8;
+	-moz-box-shadow: 0px 0px 1px 1px #d0ccc8;
+	box-shadow: 0px 0px 1px 1px #d0ccc8;
+}
+
+.work_container_content {
+	float: left;
+	padding: 0px;
+	width: 100%;
+}
+
+/*.work_container_content ul, li {
+	color: #000;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 11pt;
+	margin: 0px;
+}*/
+
+.work_container_content .project_name {
+	float: left;
+	height: 70px;
+	width: 100%;
+}
+
+.work_container_content .slideshow_container {
+	float: left;
+	width: 30%;
+}
+
+.work_container_content .slideshow_container .website {
+	float: left;
+	margin: 10px 0px;
+}
+
+.work_container_content .slideshow_container .website a:link, a:visited {
+	color: #404040;
+	text-decoration: none;
+}
+
+.work_container_content .slideshow_container .website a:hover, a:active {
+	color: #009a9a;
+	text-decoration: none;
+}
+
+.work_container_content .slideshow_nav {
+	clear: both;
+	float: right;
+	position: relative;
+}
+	
+.work_container_content .text_container {
+	float: right;
+	display: inline;
+	width: 70%;
+}
+
+.text_container_content a:link, a:visited {
+	text-decoration: underline;
+}
+
+.text_container_content a:hover, a:active {
+	color: #009a9a;
+	text-decoration: none;
+}
+
+.work_container_content .text {
+	float: left;
+	margin: 0px 0px 0px 20px;
 }
 
 /************************************** PLAY SECTION **************************************/
 .play_section {
 	padding: 40px;
 }
+
+.play_container {
+	background: rgb(256, 256, 256);
+	background: rgba(256, 256, 256, 0.5);
+	margin-top: 30px;
+	padding: 10px 30px;
+	
+	-webkit-box-shadow: 0px 0px 1px 1px #d0ccc8;
+	-moz-box-shadow: 0px 0px 1px 1px #d0ccc8;
+	box-shadow: 0px 0px 1px 1px #d0ccc8;
+}
+
 /************************************** CONTACT SECTION **************************************/
+.contact_section_container {
+	width: 100%;
+}
+
 .contact_section {
 	background: url(../img/broken_noise.jpg);
-	margin: 0px 0px -10px -10px;
 	padding: 40px;
-	width: 100%;
 	z-index: 0;
+	
+	-webkit-box-shadow: 0px -1px 0px 0px #fff;
+	-moz-box-shadow: 0px -1px 0px 0px #fff;
+	box-shadow: 0px -1px 0px 0px #fff;
+}
+
+.contact_section p {
+	color: #ffffff;
+	display: block;
+	font-family: Droid Serif, Georgia, Serif;
+	font-size: 18pt;
+	line-height: 2.2em;
+	margin: auto;
+	padding-top: 30px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	width: 100%;
+}
+
+.contact_social_media_container {
+	margin: 30px auto 100px auto;
+	position: relative;
+	width: 328px;
+}
+
+/************************************** SLIDESHOW **************************************/
+
+.pager_right {
+	clear: both;
+	float: right;
+	margin: 10px;
+}
+
+.slideshow { 
+	height: 248px; 
+	width: 330px;
+	float: left;
+}
+
+.slideshow img { 
+	padding: 0px; 
+	border: 1px solid #ccc; 
+}
+
+.slideshow_vertical {
+	height: 460px; 
+	width: 330px;
+	float: left;
+}
+
+.slideshow_vertical img { 
+	padding: 0px; 
+	border: 1px solid #ccc; 
+}
+
+.slide_nav a { 
+	color: #999;
+	margin-left: 5px; 
+	text-decoration: none;  
+}
+
+.slide_nav a.activeSlide { 
+	color: #404040;
+}
+
+.slide_nav a:focus { 
+	outline: none; 
+}
+
+.thumbnail {
+	height: 248px;
+	width: 330px;
+}
+
+.thumbnail_vertical {
+	height: 460px;
+	width: 330px;
 }

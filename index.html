@@ -10,7 +10,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title></title>
+    <title>Danica Tiu</title>
+    
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -21,9 +22,25 @@
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
     
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33253559-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
 </head>
 
 <body>
@@ -32,47 +49,290 @@
             <div class="top_bar"></div>
             <div class="nav_bar_container">        
                 <div class="nav_bar_content">
-                    <h1>Danica Tiu</h1>
+                    <h1 class="nav">Danica Tiu</h1>
                     <ul>
                        <li><a id="about_nav" href="#">ABOUT</a></li>
                        <li><a id="work_nav" href="#">WORK</a></li>
                        <li><a id="play_nav" href="#">PLAY</a></li>
-                       <li><a id="contact_nav" href="#t">CONTACT</a></li>
+                       <li><a id="contact_nav" href="#">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    
-    <div class="about_section" id="about">
-         <h2 style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis sagittis placerat. Duis suscipit, nibh non luctus lobortis, purus est lobortis velit, non laoreet tellus est quis lacus. Aenean non augue dolor. Nulla rhoncus volutpat magna. Maecenas volutpat bibendum elit, non consectetur libero tincidunt sit amet. Mauris nec quam ut diam ornare sodales. Quisque euismod, dolor pulvinar semper fermentum, magna sem hendrerit dui, vel malesuada augue diam vel ante. Phasellus a erat neque, ut lobortis lacus. Vestibulum aliquet egestas nunc et ultricies. Sed eu turpis non nisi mattis adipiscing. Cras commodo cursus metus sit amet interdum. Aenean arcu diam, ullamcorper vel ullamcorper sed, sollicitudin ultricies quam.</h2>
+
+    <div class="about_section_container">
+        <div class="about_section" id="about">
+             <p class="about">Front End Development.  Marketing.  Craft Beer.<br/>
+
+             <a id="lets_talk" href="#">Let’s talk</a> about any or all of the above.<br/>
+
+             Preferably, over a beer.</p>
+         
+            <div class="about_social_media_container">         
+                <ul class="social_media">
+                    <a href="http://twitter.com/danicatiu" target="_blank">
+                        <li id="twitter"></li>
+                    </a>
+                    <a href="https://github.com/baconjockey" target="_blank">
+                        <li id="github"></li>
+                    </a>
+                    <a href="http://www.linkedin.com/pub/danica-tiu/4/183/225" target="_blank">
+                        <li id="linkedin"></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </div>
     
-    <div class="work_section" id="work">WORK
-     <h2> Proin in metus nisi. Quisque congue, est et malesuada tempor, metus diam elementum erat, vel blandit odio erat sit amet nisi. In augue nisl, egestas luctus pellentesque sed, ullamcorper nec neque. Quisque viverra, sem quis accumsan elementum, purus dui dignissim risus, et consequat enim nisi in orci. Aliquam erat volutpat. Maecenas eu lacus sapien. Vestibulum non massa turpis. Cras mattis velit sed libero tempor ullamcorper. Aenean lorem enim, pharetra et aliquam hendrerit, tempus non tortor. Cras vitae metus orci. Morbi sit amet libero mauris, ut bibendum nibh. Nulla eu lobortis arcu. Ut molestie vehicula nibh, et pretium libero convallis non. Vestibulum ac lorem sagittis orci convallis lacinia. Nullam imperdiet nunc sed nulla ornare aliquet at ut velit.
+    <div class="work_section" id="work">
+        <h2 class="brown">WORK</h2>
+        <hr class="grey">
+        
+         <div class="clearfix work_container">
+            <div class="work_container_content"> 
+                
+                <div class="project_name">
+                    <h3 class="work">BYOBuddy</h3>
+                    <p class="work">beer & food pairing app</p>
+                </div>
+                           
+                <div class="slideshow_container">                
+                    <div class="clearfix slideshow">
+                        <img class="clearfix thumbnail" src="img/byobuddy/main_page.jpg" />
+                        <img class="clearfix thumbnail" src="img/byobuddy/recommendations_page.jpg" />
+                        <img class="clearfix thumbnail" src="img/byobuddy/recommendations_page_overlay.jpg" />
+                    </div>
+                    <div class="website">
+                        <p class="work"><a href="http://byobuddyand.me">http://byobuddyand.me</a></p>
+                    </div>   
+                </div>
+                
+                <div class="text_container">                
+                    <div class="text">
+                        <h4 class="work">Role</h4>
+                        <p class="work">UX Design &#8226; Back End Development &#8226; Front End Development</p>
+                        <h4 class="work">Details</h4>
+                        <p class="work">
+                            From October to December 2011, I was a part of <a href="http://codeacademy.org/">Code 
+                                Academy</a>, a 12-week intensive course that teaches “passionate people how to build [Ruby 
+                                on Rails] web applications."  BYOBuddy is a food and beer pairing application designed for 
+                                Code Academy’s Demo Day, where it was presented to an audience of 260 at Chicago’s 
+                                TechNexus.
+                        </p>
+                        
+                        <h4 class="work">Process</h4>
+                        <p class="work">
+                            To build BYOBuddy, I began by producing Balsamiq wireframes to map out user experience.  Then, 
+                            I built the backend with Ruby on Rails, created application mockups in Photoshop, and styled 
+                            the app with HTML, CSS, and JQuery.  Finally, I deployed BYOBuddy via Heroku.
+                        </p>
 
-       Sed ante nisl, tincidunt a posuere nec, vehicula quis urna. Integer id magna ac odio sagittis tincidunt. Etiam ut rutrum ante. Vivamus imperdiet fermentum ante, id hendrerit ipsum gravida nec. Suspendisse quam eros, feugiat at ornare nec, fringilla dignissim turpis. Nam nec tellus diam, eget euismod augue. Nulla ac diam cursus magna blandit molestie at posuere erat. Proin elementum nulla at neque cursus dignissim. Donec pharetra nisi et nisi semper lobortis. Aenean pharetra euismod libero, eu dignissim nibh ultrices tincidunt. Aliquam sagittis mi in nibh tempor adipiscing. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sodales egestas magna, sit amet tristique tellus eleifend vel. Nulla rhoncus elit vel eros laoreet consequat.</h2>
+                        <h4 class="work">Tech Skills</h4>
+                        <p class="work">
+                            Ruby on Rails &#8226; HTML &#8226; CSS &#8226; JQuery
+                        </p>
+
+                        <h4 class="work">Tools</h4>
+                        <p class="work">
+                            Balsamiq &#8226; Photoshop &#8226; Git &#8226; TextMate &#8226; Heroku
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix work_container">
+            <div class="work_container_content"> 
+                
+                <div class="project_name">
+                    <h3 class="work">Weungry</h3>
+                    <p class="work">group ordering made easy</p>
+                </div>
+                           
+                <div class="slideshow_container">                
+                    <div class="clearfix slideshow">
+                        <img class="clearfix thumbnail" src="img/weungry/pick_scroll.jpg" />
+                        <img class="clearfix thumbnail" src="img/weungry/on_me_fixed.jpg" />
+                        <img class="clearfix thumbnail" src="img/weungry/confirm_page.jpg" />
+                        <img class="clearfix thumbnail" src="img/weungry/email_template.jpg" />
+                    </div>
+                    <div class="website">
+                        <p class="work"><a href="http://weungry.com/">http://weungry.com/</a></p>
+                    </div>   
+                </div>
+                
+                <div class="text_container">                
+                    <div class="text">
+                        <h4 class="work">Role</h4>
+                        <p class="work">Front End Development</p>
+                        <h4 class="work">Details</h4>
+                        <p class="work">
+                            Weungry is a web application that streamlines group ordering from restaurants.  This prototyping project was done for <a href="http://doejo.com/">Doejo</a>, an award-winning design firm based in Chicago.
+                        </p>
+                        
+                        <h4 class="work">Process</h4>
+                        <p class="work">
+                            After receiving Photoshop wireframes from Doejo’s in-house designer, I created a clickable prototype of the application and used git to collaborate with two of Doejo's in-house developers to ensure seamless front and back end integration.  In addition to building application prototypes with HTML, CSS, and JQuery, I also hand-coded Weungry’s email template with strict HTML and ensured cross-browser compliance.
+                        </p>
+
+                        <h4 class="work">Tech Skills</h4>
+                        <p class="work">
+                            HTML &#8226; CSS &#8226; JQuery
+                        </p>
+
+                        <h4 class="work">Tools</h4>
+                        <p class="work">
+                            Git &#8226; Photoshop &#8226; TextMate
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clearfix work_container">
+            <div class="work_container_content"> 
+                
+                <div class="project_name">
+                    <h3 class="work">Vanberg & DeWulf Site Re-launch</h3>
+                    <p class="work">belgian beer importers</p>
+                </div>
+                           
+                <div class="slideshow_container">                
+                    <div class="clearfix slideshow">
+                        <img class="clearfix thumbnail" src="img/vbdw_relaunch/main_page.jpg" />
+                        <img class="clearfix thumbnail" src="img/vbdw_relaunch/about_us.jpg" />
+                        <img class="clearfix thumbnail" src="img/vbdw_relaunch/saison_dupont.jpg" />
+                    </div>
+                    <div class="website">
+                        <p class="work"><a href="http://www.belgianexperts.com/">http://www.belgianexperts.com/</a></p>
+                    </div>   
+                </div>
+                
+                <div class="text_container">                
+                    <div class="text">
+                        <h4 class="work">Role</h4>
+                        <p class="work">Content Migration Strategy &#8226; Content Management &#8226; Project Management &#8226; Social Media Strategy &#8226; E-mail Marketing</p>
+                        <h4 class="work">Details</h4>
+                        <p class="work">
+                            Vanberg & DeWulf is the oldest Belgian beer importer in the United States and has been importing specialty beers from Belgium and Northern France since 1982.  In 2011, Vanberg & DeWulf hired <a href="http://blueprintds.com/">Blueprint Design Studio</a>, a Chicago-based web design agency, to migrate and redesign their old site into a sleek, new WordPress-powered site
+                        </p>
+                        
+                        <h4 class="work">Process</h4>
+                        <p class="work">
+                            In order to meet the strict deadlines of the website re-launch I created and maintained a detailed website content inventory to keep communication open between Blueprint and Vanberg & DeWulf and to ensure that content was migrated successfully.  Then, I reviewed and edited content in an iterative editing process, negotiating input and revisions from Vanberg & DeWulf stakeholders. <br/><br/>
+
+                            After the site went live, I led a web and social media campaign (Facebook, Twitter, e-mail marketing campaigns) to alert our audiences – beer and food writers, bloggers, bars, stores, restaurants, distributors, sales reps, beer enthusiasts, etc. – of the re-launch of the Vanberg & DeWulf’s site and entrance into the social media realm. <br/><br/>
+
+                            Post-launch, I was responsible for the continual content management and upkeep, as well as the development of communications strategies – via site, social media channels, or e-mail marketing campaigns – for our different constituencies.<br/>
+                           
+                        </p>
+
+                        <h4 class="work">Tech Skills</h4>
+                        <p class="work">
+                            HTML &#8226; CSS &#8226; WordPress
+                        </p>
+
+                        <h4 class="work">Tools</h4>
+                        <p class="work">
+                            Photoshop &#8226; InDesign &#8226; MailChimp &#8226; HootSuite
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clearfix work_container">
+            <div class="work_container_content"> 
+                
+                <div class="project_name">
+                    <h3 class="work">Vanberg & DeWulf Coast to Coast Toast</h3>
+                    <p class="work">the biggest belgian beer bash of the millennia</p>
+                </div>
+                           
+                <div class="slideshow_container">                
+                    <div class="clearfix slideshow_vertical">
+                        <img class="clearfix thumbnail_vertical" src="img/vbdw_c2ct/c2ct_campaign_1.jpg" />
+                        <img class="clearfix thumbnail_vertical" src="img/vbdw_c2ct/c2ct_campaign_2.jpg" />
+                        <img class="clearfix thumbnail_vertical" src="img/vbdw_c2ct/c2ct_toolkit_cover.jpg" />
+                        <img class="clearfix thumbnail_vertical" src="img/vbdw_c2ct/c2ct_toolkit_sample_1.jpg" />
+                        <img class="clearfix thumbnail_vertical" src="img/vbdw_c2ct/c2ct_toolkit_sample_2.jpg" />
+                        <img class="clearfix thumbnail_vertical" src="img/vbdw_c2ct/c2ct_belgian_holiday_poster.jpg" />
+                    </div>
+                    <div class="website">
+                        <p class="work">Sample e-mail marketing campaigns and print media</p>
+                    </div>   
+                </div>
+                
+                <div class="text_container">                
+                    <div class="text">
+                        <h4 class="work">Role</h4>
+                        <p class="work">Promotional Marketing &#8226; Content Strategy &#8226; Competitive Analysis &#8226; Graphic Design</p>
+                        <h4 class="work">Details</h4>
+                        <p class="work">
+                            To celebrate 30 years of importing Belgian Beer, Vanberg & DeWulf threw the “biggest Belgian beer celebration of the millennia” on November 15, 2011. That evening, beer enthusiasts raised their glasses in 350 establishments across the nation to salute the importer and America’s craft beer culture. 
+                        </p>
+                        
+                        <h4 class="work">Process</h4>
+                        <p class="work">
+                            We started competitive analysis for our November Coast to Coast Toast (C2CT) 6 months before the event. After conducting research based on sales data from our distributors, industry publications, and competitor advertising, I coordinated teams of interns for our call outreach efforts. Although our initial goal was to have 200 accounts participate in the C2CT, our outreach approach nearly doubled our initial goal and we toasted with 350 accounts instead. <br /><br />
+
+                            To keep our “Coast to Coast Toast Hosts” up to date on the latest news and bring more “hosts” to the fold, I managed weekly e-mail marketing campaigns via MailChimp.  Additionally, I created a number of materials to help our hosts with their toasts – table tents, posters, party-planning toolkit, and beyond. 
+
+                        </p>
+
+                        <h4 class="work">Tech Skills</h4>
+                        <p class="work">
+                            HTML &#8226; CSS &#8226; WordPress
+                        </p>
+
+                        <h4 class="work">Tools</h4>
+                        <p class="work">
+                            Photoshop &#8226; InDesign &#8226; MailChimp &#8226; HootSuite
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
    
     
     
-    <div class="play_section" id="play">PLAY
-        <h2>Maecenas vulputate varius ante vitae accumsan. Integer a ante vel sapien venenatis dapibus eleifend sed mauris. Integer eleifend fermentum lectus vel placerat. Integer bibendum, tortor ac elementum auctor, enim mi blandit dui, ac vulputate urna tellus at libero. Sed viverra consequat lorem, quis vestibulum felis vulputate vitae. Nunc ut dolor odio, ut dapibus enim. Pellentesque ac elit at lectus blandit blandit eu ut nisi. Phasellus scelerisque fringilla nisi ac hendrerit. Nam tempor dictum leo, nec pharetra lacus hendrerit eu. Quisque gravida accumsan augue quis pulvinar. In sed laoreet augue. Aliquam risus lacus, venenatis non hendrerit vitae, feugiat fermentum tortor.
-
-           Nam dignissim lorem eu felis volutpat ullamcorper. Sed accumsan vestibulum purus vitae blandit. Sed pharetra laoreet velit, imperdiet lacinia tellus tempor sed. Suspendisse nec lacus purus, ut aliquam dui. Nam quis nulla odio, quis vulputate est. Proin porta urna vitae tortor posuere euismod. Fusce eleifend purus et risus laoreet luctus. Vivamus sed tellus sit amet elit pharetra posuere. Fusce sit amet nunc quis erat eleifend elementum a non urna. Morbi pharetra ullamcorper consequat. Morbi interdum mauris leo, quis feugiat orci. Donec ac est urna, dapibus tempor lorem. Aliquam dignissim ligula et elit dictum vulputate. Integer nisl augue, dictum iaculis viverra eu, pharetra sit amet orci. Integer in dui ac erat faucibus cursus. Etiam odio sem, adipiscing eu fringilla et, adipiscing ut dolor.</h2>
+    <div class="play_section" id="play">
+        <h2 class="brown">PLAY</h2>
+        <hr class="grey">
+        <div class="play_container">
+            <h1>This space reserved for experiments!</h1>
+        </div>
     </div>
     
-    <div class="contact_section" id="contact">CONTACT</div>
+    <div class="contact_section_container">    
+        <div class="contact_section" id="contact">
+            <h2 class="beige">CONTACT</h2>
+            <hr class="beige">
+            <p>Drop me a line at danica.tiu (at) gmail.com.  I’d love to hear from you!</p>
+            <div class="contact_social_media_container">         
+                <ul class="social_media">
+                    <a href="http://twitter.com/danicatiu" target="_blank">
+                        <li id="twitter"></li>
+                    </a>
+                    <a href="https://github.com/baconjockey" target="_blank">
+                        <li id="github"></li>
+                    </a>
+                    <a href="http://www.linkedin.com/pub/danica-tiu/4/183/225" target="_blank">
+                        <li id="linkedin"></li>
+                    </a>
+                </ul>
+            </div>    
+        </div>
+    </div>
     
   
     <footer>
 
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
