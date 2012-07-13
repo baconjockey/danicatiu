@@ -30,17 +30,7 @@ $(document).ready(function() {
 /************************************** SLIDESHOW CYCLE **************************************/	
 
 	
-	$('.slideshow').each(function(i) {
-		var p = this.parentNode;
-			$(this).after('<div class="clearfix pager_right slide_nav slide_nav'+i+'">').cycle({
-		    fx:     'fade', 
-		    speed:  'fast', 
-		    timeout: 0, 
-		    pager:  '.slide_nav' + i
-		});
-	});
-	
-	$('.slideshow_vertical').each(function(i) {
+	$('.slideshow, .slideshow_vertical').each(function(i) {
 		var p = this.parentNode;
 			$(this).after('<div class="clearfix pager_right slide_nav slide_nav'+i+'">').cycle({
 		    fx:     'fade', 
